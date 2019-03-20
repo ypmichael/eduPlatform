@@ -1,0 +1,255 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.third.IntelPlat</groupId>
+	<artifactId>IntelPlat</artifactId>
+	<version>0.1</version>
+	<packaging>war</packaging>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.3.3.RELEASE</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-redis</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpmime</artifactId>
+			<version>4.5.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.hazelcast</groupId>
+			<artifactId>hazelcast</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.9</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.7</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.0</version>
+		</dependency>
+
+		<!-- http://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-lang/commons-lang -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.vividsolutions</groupId>
+			<artifactId>jts-core</artifactId>
+			<version>1.14.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpasyncclient</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.jcraft/jsch -->
+		<dependency>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+			<version>0.1.54</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>23.0</version>
+		</dependency>
+
+		<!--=== SSL/TLS/certificates -->
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15on</artifactId>
+			<version>1.52</version>
+		</dependency>
+
+		<!-- AOP -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itextpdf</artifactId>
+			<version>5.4.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itext-asian</artifactId>
+			<version>5.2.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.innoventsolutions.birt.runtime/com.lowagie.text -->
+		<dependency>
+		    <groupId>com.innoventsolutions.birt.runtime</groupId>
+		    <artifactId>com.lowagie.text_2.1.7.v201004222200</artifactId>
+		    <version>4.8.0</version>
+		</dependency>
+
+	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<profileActive>dev</profileActive>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<profileActive>prod</profileActive>
+			</properties>
+		</profile>
+	</profiles>
+
+	<build>
+
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<excludes>
+					<exclude>application*.properties</exclude>
+				</excludes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>application.properties</include>
+					<include>application-${profileActive}.properties</include>
+				</includes>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<version>3.0.1</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
